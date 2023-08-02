@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.wrap{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.w200{
+    width: 200px;
+}
+.w400{
+    width: 400px;
+}
+.w100600{
+    width: calc(100% - 600px);
+}
+.w100200{
+    width: calc(100% - 200px);
+}
+.h120{
+    height: 120px;
+}
+.h100120{
+    height: calc(100vh - 120px);
+}
+.col-12{
+    width: 100%;
+}
+.abs{
+    position: absolute;
+}
+.rel{
+    position: relative;
+}
+.d-flex{
+    display: flex;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.ofh{
+    overflow: hidden;
+}
+.jcb{
+    justify-content: space-between;
+}
+
+/* hd */
+.logo{
+    text-align: center;
+}
+.d1a{
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.d2ul{
+    font-size: 18px;
+    text-align: center;
+    /* ---- 달라지는것들 ---- */
+    top: 0;
+    left: 100%;
+    width: 200px;
+    /* ------------- */
+    background-color: rgb(168, 41, 41);
+    z-index: 10000;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+.d2ul a{
+    color: white;
+    padding: 5px 0;
+}
+/* 달라지는것들 */
+.d2ul li{
+    padding: 3px 0;
+}
+.d1li:hover .d2ul{
+    height: 11rem;
+}
+/* ------------- */
+.d2ul li:hover{
+    background-color: rgb(255, 105, 105);
+}
+.d1li:hover .d1a{
+    background-color: rgb(255, 210, 210);
+}
+#sub{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#sub ul{
+    padding: 0px 3px;
+}
+#sub a{
+    font-size: 13px;
+}
+/* content */
+#banner{
+    background-color: red;
+}
+#banner h1{
+    font-size: 18px;
+}
+.bimg{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.bment{
+    text-align: center;
+    padding-top: 18px;
+}
+
+#notice{
+    padding-top: 10px;
+}
+#notice ul{
+    padding: 7px;
+}
+#notice span{
+    float: right;
+    font-size: 14px;
+}
+#notice li{
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+
+#gallery{
+    padding-top: 10px;
+}
+.gallery1{
+    text-align: center;
+    padding: 10px
+}
+
+#direct{
+    padding-top: 10px;
+    text-align: center;
+}
+#direct div{
+    padding: 0 18px;
+}
+/* slide */
+.slide-wrapper{
+    overflow: hidden;
+}
+
+
+
+/* ft */
+.flogo{
+    text-align: center;
+}
+#footer img{
+    width: 100px;
+}
+.fdiv1{
+    margin-top: 15px;
+}
+.fdiv1 li{
+    padding: 0 15px;
+}
+.fdiv2{
+    margin-top: 15px;
+    padding: 0 15px;
+}
+.familysite {
+    height: 50px;
+    width: calc(100vw - 1500px);
+    text-align: center;
+    padding-top: 20px;
+}
+.familysite select {
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* pop */
+.pop{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    top: 0; right: 0; left: 0; bottom: 0;
+    margin: auto;
+    z-index: 10000;
+    display: none;
+}
+.pop.show{
+    display: block;
+}
